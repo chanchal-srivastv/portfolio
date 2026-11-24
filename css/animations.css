@@ -1,0 +1,44 @@
+
+
+
+CSS icon
+animations
+/* ==========================================================================
+   css/animations.css — Restrained GPU-Composited Scroll Reveals
+   ========================================================================== */
+
+/* Base hidden state applied only when JS adds .js-motion on <html> */
+.js-motion [data-reveal] {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity var(--duration-reveal) var(--ease-editorial),
+    transform var(--duration-reveal) var(--ease-editorial);
+  will-change: opacity, transform;
+}
+
+.js-motion [data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: auto;
+}
+
+/* Subtle stagger for gallery items on reveal */
+.js-motion .project-item[data-reveal]:nth-child(3n + 2) {
+  transition-delay: 60ms;
+}
+
+.js-motion .project-item[data-reveal]:nth-child(3n) {
+  transition-delay: 120ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js-motion [data-reveal],
+  .js-motion .project-item[data-reveal]:nth-child(n) {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    transition-delay: 0ms;
+    will-change: auto;
+  }
+}

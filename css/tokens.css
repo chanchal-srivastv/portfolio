@@ -1,0 +1,70 @@
+
+
+
+
+/* ==========================================================================
+   css/tokens.css — Design System Tokens (Dark Minimal & Editorial)
+   ========================================================================== */
+
+:root {
+  /* Color Palette */
+  --bg-canvas: #141414;
+  --bg-surface: #1C1C1C;
+  --bg-surface-elevated: #242424;
+
+  --text-primary: #F1F0ED;
+  --text-secondary: #D6D5D1;
+  --text-muted: #A6A5A2;       /* 7.5:1 AAA contrast on #141414 */
+
+  --border-subtle: #2A2A2A;
+  --border-strong: #4A4A4A;
+
+  --accent: #8295A5;           /* Muted steel blue for buttons, borders, icons */
+  --accent-text: #9EB0BF;      /* 7.8:1 AAA contrast on #141414 for links/labels */
+  --accent-hover: #9EB0BF;
+
+  /* Typography */
+  --font-display: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  /* Fluid Type Scale */
+  --text-hero: clamp(2.375rem, 5.2vw, 4.75rem);     /* 38px -> 76px */
+  --text-h2: clamp(1.625rem, 2.8vw, 2.5rem);        /* 26px -> 40px */
+  --text-h3: clamp(1.125rem, 1.4vw, 1.375rem);      /* 18px -> 22px */
+  --text-lead: clamp(1.0625rem, 1.3vw, 1.25rem);    /* 17px -> 20px */
+  --text-base: 1rem;                                /* 16px */
+  --text-sm: 0.875rem;                              /* 14px */
+  --text-meta: 0.75rem;                             /* 12px */
+
+  /* Line Heights & Tracking */
+  --leading-tight: 1.06;
+  --leading-heading: 1.16;
+  --leading-body: 1.65;
+  --tracking-tight: -0.025em;
+  --tracking-heading: -0.015em;
+  --tracking-meta: 0.02em;
+
+  /* Spacing Rhythm (4px base) */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.5rem;    /* 24px */
+  --space-6: 2rem;      /* 32px */
+  --space-7: 3rem;      /* 48px */
+  --space-8: 4.5rem;    /* 72px */
+  --space-9: 6rem;      /* 96px */
+
+  /* Layout & Surfaces */
+  --container-max: 82rem;                           /* 1312px */
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --radius-none: 0px;
+  --radius-sm: 4px;
+
+  /* Restrained Transitions */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 220ms;
+  --duration-base: 320ms;
+  --duration-reveal: 480ms;
+}

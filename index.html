@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chanchal Srivastava — Video Editor | Creative Technologist | Developer</title>
+  <meta name="description" content="Freelance video editor specializing in high-retention social media content, Instagram Reels, YouTube Shorts, and DaVinci Resolve post-production." />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Chanchal Srivastava — Video Editor &amp; Creative Technologist" />
+  <meta property="og:description" content="Social-first video editing in DaVinci Resolve: Reels, Shorts, creator content, and motion graphics." />
+  <meta property="og:image" content="assets/meta/og-image.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/meta/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts: Manrope (Headings), Inter (Body), JetBrains Mono (Occasional Technical Metadata) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Phase 1 Stylesheets (Phase 2 will add layout.css, components.css, animations.css) -->
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a class="brand" href="#hero" aria-label="Home">Chanchal Srivastava</a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#showreel">Showreel</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#workflow">Workflow</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- 1. HERO -->
+    <section id="hero" class="section-hero" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="positioning">Video Editor | Creative Technologist | Developer</p>
+        <h1 id="hero-heading">
+          Social-first video editing shaped by pacing, sound, and clean visual rhythm.
+        </h1>
+        <p class="hero-intro">
+          I cut short-form content, creator narratives, and promotional edits in DaVinci Resolve—built to hold attention from the first frame.
+        </p>
+        <a class="cta-primary" href="#work">Explore my work</a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <!-- Phase 2: Subtle editorial reel still / ambient composition -->
+        <div class="hero-frame-placeholder"></div>
+      </div>
+    </section>
+
+    <!-- 2. SHOWREEL -->
+    <section id="showreel" class="section-showreel" aria-labelledby="showreel-heading">
+      <div class="section-header">
+        <h2 id="showreel-heading">Showreel</h2>
+        <p class="section-summary">Selected cuts across short-form social, creator storytelling, and motion graphics.</p>
+      </div>
+      <div class="video-stage video-stage--16x9" data-youtube-id="REPLACE_WITH_SHOWREEL_ID" data-aspect="16/9">
+        <!-- Phase 2: Custom lightweight WebP poster + YouTube facade button -->
+        <button type="button" class="yt-facade-trigger" aria-label="Play Showreel on YouTube">
+          <span class="yt-facade-label">Play Showreel</span>
+          <span class="meta-tag">16:9</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 3. SELECTED EDITING WORK -->
+    <section id="work" class="section-work" aria-labelledby="work-heading">
+      <div class="section-header">
+        <h2 id="work-heading">Selected Editing Work</h2>
+        <div class="filter-bar" role="group" aria-label="Filter projects by category">
+          <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-btn" data-filter="reels" aria-pressed="false">Reels &amp; Shorts</button>
+          <button type="button" class="filter-btn" data-filter="promo" aria-pressed="false">Promo</button>
+          <button type="button" class="filter-btn" data-filter="gaming" aria-pressed="false">Gaming &amp; Creator</button>
+          <button type="button" class="filter-btn" data-filter="motion" aria-pressed="false">Motion &amp; Captions</button>
+        </div>
+      </div>
+
+      <p id="gallery-status" class="sr-only" aria-live="polite">Showing all editing projects.</p>
+
+      <!-- Phase 2: Populated/enhanced from js/data/projects.js; semantic fallback structure -->
+      <div class="gallery-grid" data-gallery-grid>
+        <article class="project-item project-item--vertical" data-category="reels">
+          <div class="video-stage video-stage--9x16" data-youtube-id="REPLACE_WITH_VIDEO_ID_1" data-aspect="9/16">
+            <button type="button" class="yt-facade-trigger" aria-label="Play Vertical Reel Placeholder 01">
+              <span class="yt-facade-label">Play</span>
+              <span class="meta-tag">9:16 · 0:38</span>
+            </button>
+          </div>
+          <div class="project-meta">
+            <h3>[Project Title — Short-Form Reel]</h3>
+            <p>High-retention hook pacing, kinetic captions, and layered sound design cut in DaVinci Resolve.</p>
+          </div>
+        </article>
+
+        <article class="project-item project-item--vertical" data-category="gaming">
+          <div class="video-stage video-stage--9x16" data-youtube-id="REPLACE_WITH_VIDEO_ID_2" data-aspect="9/16">
+            <button type="button" class="yt-facade-trigger" aria-label="Play Vertical Gaming Edit Placeholder 02">
+              <span class="yt-facade-label">Play</span>
+              <span class="meta-tag">9:16 · 0:45</span>
+            </button>
+          </div>
+          <div class="project-meta">
+            <h3>[Project Title — Creator Highlight]</h3>
+            <p>Beat-synced transitions, dynamic zooms, and clean audio ducking for creator storytelling.</p>
+          </div>
+        </article>
+
+        <article class="project-item project-item--vertical" data-category="promo">
+          <div class="video-stage video-stage--9x16" data-youtube-id="REPLACE_WITH_VIDEO_ID_3" data-aspect="9/16">
+            <button type="button" class="yt-facade-trigger" aria-label="Play Social Promo Placeholder 03">
+              <span class="yt-facade-label">Play</span>
+              <span class="meta-tag">9:16 · 0:30</span>
+            </button>
+          </div>
+          <div class="project-meta">
+            <h3>[Project Title — Social Promo]</h3>
+            <p>Structured product narrative with custom Fusion typography and balanced color grading.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. PROJECT CASE STUDIES -->
+    <section id="case-studies" class="section-case-studies" aria-labelledby="case-studies-heading">
+      <div class="section-header">
+        <h2 id="case-studies-heading">Project Case Studies</h2>
+        <p class="section-summary">Detailed breakdowns covering creative intent, pacing decisions, and DaVinci Resolve execution.</p>
+      </div>
+
+      <article class="case-study-preview">
+        <div class="case-study-body">
+          <h3>[Featured Case Study Title]</h3>
+          <dl class="case-study-specs">
+            <div>
+              <dt>Project Objective</dt>
+              <dd>[Describe the core communication goal, target platform, and audience retention target.]</dd>
+            </div>
+            <div>
+              <dt>Editing Approach</dt>
+              <dd>[Outline hook structure, J-cut/L-cut pacing, and visual rhythm.]</dd>
+            </div>
+            <div>
+              <dt>Creative Decisions</dt>
+              <dd>[Note typography choices, sound hits, and restraint around visual effects.]</dd>
+            </div>
+            <div>
+              <dt>DaVinci Resolve Workflow</dt>
+              <dd>[Detail Cut/Edit timeline organization, Fusion motion nodes, Color grading, and Fairlight mix.]</dd>
+            </div>
+          </dl>
+          <a class="text-link" href="work/case-study.html">Read full breakdown &amp; watch final video</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- 5. SERVICES -->
+    <section id="services" class="section-services" aria-labelledby="services-heading">
+      <div class="section-header">
+        <h2 id="services-heading">Services</h2>
+        <p class="section-summary">Focused post-production for creators, brands, and social-first campaigns.</p>
+      </div>
+      <ul class="services-list">
+        <li>
+          <h3>Short-Form Content</h3>
+          <p>Tight, retention-driven edits engineered for vertical feeds without visual clutter.</p>
+        </li>
+        <li>
+          <h3>Instagram Reels</h3>
+          <p>Rhythmic storytelling, clean framing, and platform-native typography.</p>
+        </li>
+        <li>
+          <h3>YouTube Shorts</h3>
+          <p>Fast opening hooks, clear narrative arcs, and crisp audio leveling.</p>
+        </li>
+        <li>
+          <h3>Social Media Promotional Videos</h3>
+          <p>Concise product and launch edits built to communicate value clearly.</p>
+        </li>
+        <li>
+          <h3>Gaming &amp; Creator Content</h3>
+          <p>Pacing-focused highlights, comedic timing, and momentum-driven cuts.</p>
+        </li>
+        <li>
+          <h3>Captions &amp; Motion Graphics</h3>
+          <p>Custom DaVinci Resolve Fusion titles and legible captions that support the cut.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 6. WORKFLOW (Secondary Surface #1C1C1C) -->
+    <section id="workflow" class="section-workflow surface-alt" aria-labelledby="workflow-heading">
+      <div class="section-header">
+        <h2 id="workflow-heading">DaVinci Resolve Workflow</h2>
+        <p class="section-summary">Structured timelines, deliberate color grading, and balanced Fairlight sound design.</p>
+      </div>
+      <div class="workflow-grid">
+        <div class="workflow-steps">
+          <ol class="process-list">
+            <li>
+              <h3>Assembly &amp; Pacing</h3>
+              <p>Stringout, selects, and rhythm-first rough cut before any visual polish.</p>
+            </li>
+            <li>
+              <h3>Motion &amp; Captions</h3>
+              <p>Clean Fusion callouts and legible typography timed to vocal cadence.</p>
+            </li>
+            <li>
+              <h3>Color &amp; Fairlight Sound</h3>
+              <p>Node-based color balancing paired with dialogue clarity, ambience, and subtle SFX.</p>
+            </li>
+          </ol>
+        </div>
+        <div class="workflow-media">
+          <figure>
+            <!-- Replace with real DaVinci Resolve timeline screenshot in assets/workflow/ -->
+            <div class="workflow-screenshot-placeholder" role="img" aria-label="Placeholder for DaVinci Resolve timeline screenshot">
+              <span>[DaVinci Resolve Timeline Screenshot]</span>
+            </div>
+            <figcaption>Color-coded track organization and node structure inside DaVinci Resolve.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. ABOUT -->
+    <section id="about" class="section-about" aria-labelledby="about-heading">
+      <div class="section-header">
+        <h2 id="about-heading">About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-block">
+          <h3>Background &amp; Philosophy</h3>
+          <p>
+            [Share your background as a video editor, how you approach pacing and visual storytelling, and why you work primarily in DaVinci Resolve.]
+          </p>
+        </div>
+        <div class="about-block">
+          <h3>Technical Perspective</h3>
+          <p>
+            Alongside editing, my background in programming, AI, and cybersecurity shapes a disciplined, systems-minded workflow—keeping projects organized, deliverables reliable, and post-production decisions intentional.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. BEYOND EDITING (Secondary Section ~20% emphasis) -->
+    <section id="beyond-editing" class="section-beyond surface-alt" aria-labelledby="beyond-heading">
+      <div class="section-header">
+        <h2 id="beyond-heading">Beyond Editing</h2>
+        <p class="section-summary">Selected technical explorations in AI, security, and software engineering.</p>
+      </div>
+      <ul class="beyond-list">
+        <li>
+          <h3>Kangaru AI</h3>
+          <p>[Brief, accurate summary of your work or exploration with Kangaru AI.]</p>
+        </li>
+        <li>
+          <h3>Local AI</h3>
+          <p>[Brief summary of local model workflows, tooling, or privacy-first experiments.]</p>
+        </li>
+        <li>
+          <h3>Cybersecurity Projects</h3>
+          <p>[Brief summary of security research, lab exercises, or defensive tooling.]</p>
+        </li>
+        <li>
+          <h3>Programming Experiments</h3>
+          <p>[Brief summary of creative coding, automation scripts, or web engineering builds.]</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 9. CONTACT -->
+    <section id="contact" class="section-contact" aria-labelledby="contact-heading">
+      <div class="section-header">
+        <h2 id="contact-heading">Contact</h2>
+        <p class="section-summary">Available for freelance social-media editing, ongoing creator retainers, and promotional cuts.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-links">
+          <ul>
+            <li><a href="mailto:chanchalsrivastava309@gmail.com">chanchalsrivastava309@gmail.com</a></li>
+            <li><a href="https://instagram.com/kangaru_real" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://youtube.com/@kangaru_real" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          </ul>
+        </div>
+
+        <form class="enquiry-form" action="#" method="post">
+          <div class="form-field">
+            <label for="enquiry-name">Name</label>
+            <input id="enquiry-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="form-field">
+            <label for="enquiry-email">Email</label>
+            <input id="enquiry-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="form-field">
+            <label for="enquiry-scope">Project Type</label>
+            <select id="enquiry-scope" name="scope">
+              <option value="reels-shorts">Instagram Reels / YouTube Shorts</option>
+              <option value="promo">Social Promotional Video</option>
+              <option value="creator">Gaming / Creator Content</option>
+              <option value="retainer">Ongoing Editing Retainer</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="enquiry-message">Project Details</label>
+            <textarea id="enquiry-message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="cta-primary">Send Enquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; <span id="footer-year">2026</span> Chanchal Srivastava. Edited in DaVinci Resolve.</p>
+  </footer>
+</body>
+</html>

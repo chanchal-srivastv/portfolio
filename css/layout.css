@@ -1,0 +1,346 @@
+
+
+
+CSS icon
+layout
+/* ==========================================================================
+   css/layout.css — Mobile-First Asymmetric Layout (Sections 1–9 + Footer)
+   ========================================================================== */
+
+/* 1. Header & Navigation Layout
+   -------------------------------------------------------------------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding: var(--space-4) var(--gutter);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3) var(--space-5);
+}
+
+.primary-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-5);
+}
+
+/* Shared Section Container Rhythm
+   -------------------------------------------------------------------------- */
+.section-hero,
+.section-showreel,
+.section-work,
+.section-case-studies,
+.section-services,
+.section-about,
+.section-contact,
+.site-footer {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* Full-bleed secondary surfaces with centered inner content */
+.surface-alt {
+  width: 100%;
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.surface-alt > .section-header,
+.surface-alt > .workflow-grid,
+.surface-alt > .beyond-list {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+/* 2. Hero Section Layout
+   -------------------------------------------------------------------------- */
+.section-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+  padding-block: var(--space-7) var(--space-8);
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-visual {
+  width: 100%;
+}
+
+/* 3. Showreel Section Layout
+   -------------------------------------------------------------------------- */
+.section-showreel {
+  padding-block: var(--space-7) var(--space-8);
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* 4. Selected Editing Work Gallery Layout
+   -------------------------------------------------------------------------- */
+.section-work {
+  padding-block: var(--space-7) var(--space-9);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-item[hidden] {
+  display: none;
+}
+
+/* 5. Project Case Studies Layout
+   -------------------------------------------------------------------------- */
+.section-case-studies {
+  padding-block: var(--space-7) var(--space-8);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.case-study-specs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+  margin-block: var(--space-6);
+}
+
+/* 6. Services Layout
+   -------------------------------------------------------------------------- */
+.section-services {
+  padding-block: var(--space-7) var(--space-8);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+/* 7. DaVinci Resolve Workflow Layout
+   -------------------------------------------------------------------------- */
+.section-workflow {
+  padding-block: var(--space-7) var(--space-8);
+}
+
+.workflow-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+}
+
+.process-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+/* 8. About Layout
+   -------------------------------------------------------------------------- */
+.section-about {
+  padding-block: var(--space-7) var(--space-8);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+/* 9. Beyond Editing Layout (Secondary Tech Section)
+   -------------------------------------------------------------------------- */
+.section-beyond {
+  padding-block: var(--space-7) var(--space-8);
+}
+
+.beyond-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+/* 10. Contact & Footer Layout
+   -------------------------------------------------------------------------- */
+.section-contact {
+  padding-block: var(--space-7) var(--space-9);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+}
+
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.site-footer {
+  padding-block: var(--space-6);
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* ==========================================================================
+   Tablet Breakpoint (min-width: 640px)
+   ========================================================================== */
+@media (min-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-7) var(--space-5);
+    align-items: start;
+  }
+
+  .project-item:nth-child(even) {
+    margin-top: var(--space-6);
+  }
+
+  .case-study-specs,
+  .services-list,
+  .beyond-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-6) var(--space-5);
+  }
+}
+
+/* ==========================================================================
+   Medium / Small Desktop Breakpoint (min-width: 768px)
+   ========================================================================== */
+@media (min-width: 768px) {
+  .section-hero {
+    padding-block: var(--space-8) var(--space-9);
+  }
+
+  .section-showreel,
+  .section-work,
+  .section-case-studies,
+  .section-services,
+  .section-workflow,
+  .section-about,
+  .section-beyond,
+  .section-contact {
+    padding-block: var(--space-8) var(--space-9);
+  }
+
+  .section-header {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-6);
+    margin-bottom: var(--space-7);
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-7);
+  }
+}
+
+/* ==========================================================================
+   Desktop Asymmetric 12-Column Grid (min-width: 1024px)
+   ========================================================================== */
+@media (min-width: 1024px) {
+  .section-hero {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: var(--space-6);
+    align-items: center;
+    padding-block: var(--space-9) var(--space-9);
+  }
+
+  .hero-copy {
+    grid-column: 1 / 8;
+  }
+
+  .hero-visual {
+    grid-column: 8 / -1;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: var(--space-8) var(--space-6);
+  }
+
+  .project-item--vertical {
+    grid-column: span 4;
+  }
+
+  .project-item:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .project-item--vertical:nth-child(3n + 2) {
+    margin-top: var(--space-7);
+  }
+
+  .project-item--vertical:nth-child(3n) {
+    margin-top: var(--space-5);
+  }
+
+  .services-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-7) var(--space-6);
+  }
+
+  .workflow-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: var(--space-6);
+    align-items: start;
+  }
+
+  .workflow-steps {
+    grid-column: 1 / 6;
+  }
+
+  .workflow-media {
+    grid-column: 6 / -1;
+  }
+
+  .beyond-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-6);
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: var(--space-6);
+    align-items: start;
+  }
+
+  .contact-links {
+    grid-column: 1 / 5;
+  }
+
+  .enquiry-form {
+    grid-column: 6 / -1;
+  }
+}
