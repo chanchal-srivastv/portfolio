@@ -4,5 +4,5 @@ Allow: /
 
 
 
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: portfolio-ten-plum-92.vercel.app/sitemap.xml
 
