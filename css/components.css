@@ -389,18 +389,10 @@ components
   color: var(--text-secondary);
 }
 
-.workflow-screenshot-placeholder {
+.workflow-media img {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  background-color: var(--bg-canvas);
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-mono);
-  font-size: var(--text-meta);
-  color: var(--text-muted);
 }
 
 .workflow-media figcaption {
@@ -486,6 +478,12 @@ components
 
 .enquiry-form .cta-primary {
   align-self: flex-start;
+}
+
+.form-status {
+  font-size: var(--text-sm);
+  color: var(--accent-text);
+  min-height: 1.5em;
 }
 
 /* 11. Footer

@@ -66,7 +66,12 @@ export function initYouTubeFacades() {
     const trigger = stage.querySelector('.yt-facade-trigger');
     if (!trigger) return;
 
-    const thumbPath = stage.dataset.thumb;
+    const youtubeId = stage.dataset.youtubeId;
+    const hasRealId = youtubeId && !youtubeId.startsWith('REPLACE_WITH_');
+    const thumbPath =
+      stage.dataset.thumb ||
+      (hasRealId ? `https://i.ytimg.com/vi/${encodeURIComponent(youtubeId)}/hqdefault.jpg` : null);
+
     if (thumbPath && !stage.querySelector('.yt-facade-poster')) {
       const img = document.createElement('img');
       img.className = 'yt-facade-poster';

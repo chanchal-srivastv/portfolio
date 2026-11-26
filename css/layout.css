@@ -86,10 +86,6 @@ layout
   align-items: flex-start;
 }
 
-.hero-visual {
-  width: 100%;
-}
-
 /* 3. Showreel Section Layout
    -------------------------------------------------------------------------- */
 .section-showreel {
@@ -278,11 +274,7 @@ layout
   }
 
   .hero-copy {
-    grid-column: 1 / 8;
-  }
-
-  .hero-visual {
-    grid-column: 8 / -1;
+    grid-column: 1 / 10;
   }
 
   .gallery-grid {
