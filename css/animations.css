@@ -22,6 +22,13 @@ animations
   overflow: hidden;
 }
 
+/* Guarantee nothing behind the curtain is visible before the cut completes */
+html.intro-locked header,
+html.intro-locked main,
+html.intro-locked footer {
+  visibility: hidden;
+}
+
 .intro-half {
   position: absolute;
   left: 0;
@@ -37,7 +44,7 @@ animations
 }
 
 .intro-half--bottom {
-  top: 50%;
+  bottom: 0;
   border-top: 1px solid rgba(130, 149, 165, 0.25);
 }
 
@@ -78,9 +85,6 @@ animations
   transform: rotate(22deg);
 }
 
-/* Active animation sequence (~1.55s total):
-   0–900ms: Scissor cuts across completely opaque screen
-   920–1540ms: Both halves part to reveal website */
 .intro-curtain.is-playing {
   pointer-events: none;
 }
@@ -224,6 +228,12 @@ animations
 @media (prefers-reduced-motion: reduce) {
   .intro-curtain {
     display: none !important;
+  }
+
+  html.intro-locked header,
+  html.intro-locked main,
+  html.intro-locked footer {
+    visibility: visible !important;
   }
 
   .js-motion [data-reveal],
