@@ -12,11 +12,14 @@ export function initIntroAnimation() {
     return;
   }
 
+  document.documentElement.style.overflow = 'hidden';
+
   requestAnimationFrame(() => {
     curtain.classList.add('is-playing');
   });
 
   window.setTimeout(() => {
+    document.documentElement.style.overflow = '';
     curtain.remove();
-  }, 1550);
+  }, 1500);
 }
