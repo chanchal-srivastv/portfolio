@@ -21,5 +21,5 @@ export function initIntroAnimation() {
   window.setTimeout(() => {
     document.documentElement.style.overflow = '';
     curtain.remove();
-  }, 1500);
+  }, 1600);
 }
