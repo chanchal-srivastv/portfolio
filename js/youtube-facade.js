@@ -77,7 +77,6 @@ export function initYouTubeFacades() {
       img.className = 'yt-facade-poster';
       img.src = thumbPath;
       img.alt = '';
-      img.loading = 'lazy';
       img.decoding = 'async';
       stage.prepend(img);
     }
